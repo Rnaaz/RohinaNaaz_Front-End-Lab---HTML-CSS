@@ -1,0 +1,88 @@
+section {
+    background-color: whitesmoke;
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+}
+
+#animation-bar {}
+
+.container {
+    display: inline-block;
+    padding: 15px;
+
+
+}
+
+.bar {
+    width           : 40px;
+    height          : 250px;
+    background-color: rgb(180, 176, 178);
+}
+
+section h1 {
+    text-align: center;
+}
+
+#bar-one,
+#bar-two,
+#bar-three {
+    width           : 100%;
+    background-color: white;
+
+    animation-duration       : 2s;
+    animation-iteration-count: 1;
+
+}
+
+#bar-one {
+    height        : 70%;
+    animation-name: animationBar1;
+}
+
+#bar-two {
+    height        : 60%;
+    animation-name: animationBar2;
+}
+
+#bar-three {
+    height        : 20%;
+    animation-name: animationBar3;
+}
+
+@keyframes animationBar1 {
+    0% {
+        height          : 100%;
+        background-color: white;
+    }
+
+    100% {
+        height          : 70%;
+        background-color: white;
+    }
+}
+
+@keyframes animationBar2 {
+    0% {
+        height          : 100%;
+        background-color: white;
+    }
+
+    100% {
+        height          : 60%;
+        background-color: white;
+    }
+}
+
+@keyframes animationBar3 {
+    0% {
+        height          : 100%;
+        background-color: white;
+    }
+
+    100% {
+        height          : 20%;
+        background-color: white;
+    }
+}
